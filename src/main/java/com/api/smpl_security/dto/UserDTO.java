@@ -20,4 +20,7 @@ public class UserDTO {
 
     @NotBlank(message = "password не может быть пустым")
     private String password;
+
+    @NotBlank(message = "name не может быть пустым")
+    private String name;
 }

@@ -10,6 +10,7 @@ public class UserDTOMapper {
 
     public User getEntity(UserDTO dto) throws NoSuchAlgorithmException {
         User entity = new User();
+        entity.setName(dto.getName());
         entity.setLogin(dto.getLogin());
         entity.setHashPassword(saltedHashing.hashPassword(dto.getPassword()));
         return entity;

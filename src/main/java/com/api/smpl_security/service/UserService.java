@@ -16,10 +16,12 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    private final UserDTOMapper mapper = new UserDTOMapper();
+
+
     public boolean checkUser(UserDTO dto) {
         boolean result = false;
         try {
-            UserDTOMapper mapper = new UserDTOMapper();
             User user = mapper.getEntity(dto);
             result = userRepository.findByLoginAndHashPassword(
                     user.getLogin(),
@@ -29,5 +31,15 @@ public class UserService {
             log.error("Не удалось проверить пользователя: " + e.getMessage());
         }
         return result;
+    }
+
+    public User save(UserDTO dto) {
+        User user = null;
+        try {
+            user = userRepository.save(mapper.getEntity(dto));
+        } catch (Exception e) {
+            log.error("Не удалось сохранить пользователя: " + e.getMessage());
+        }
+        return user;
     }
 }
