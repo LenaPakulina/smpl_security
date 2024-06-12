@@ -1,4 +1,4 @@
-package com.api.smpl_security.model;
+package com.api.security.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

@@ -1,14 +1,12 @@
-package com.api.smpl_security.service;
+package com.api.security.service;
 
-import com.api.smpl_security.dto.UserDTO;
-import com.api.smpl_security.dto.UserDTOMapper;
-import com.api.smpl_security.model.User;
-import com.api.smpl_security.repository.UserRepository;
+import com.api.security.dto.UserDTO;
+import com.api.security.dto.UserDTOMapper;
+import com.api.security.model.User;
+import com.api.security.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.security.NoSuchAlgorithmException;
 
 @Slf4j
 @Service

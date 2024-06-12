@@ -1,15 +1,14 @@
-package com.api.smpl_security.controller;
+package com.api.security.controller;
 
-import com.api.smpl_security.dto.UserDTO;
-import com.api.smpl_security.model.User;
-import com.api.smpl_security.service.UserService;
+import com.api.security.dto.UserDTO;
+import com.api.security.model.User;
+import com.api.security.service.UserService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
 @RequestMapping("/userCheck")

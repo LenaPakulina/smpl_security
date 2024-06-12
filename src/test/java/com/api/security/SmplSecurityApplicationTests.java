@@ -1,4 +1,4 @@
-package com.api.smpl_security;
+package com.api.security;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

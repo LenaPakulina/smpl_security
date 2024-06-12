@@ -1,6 +1,6 @@
-package com.api.smpl_security.repository;
+package com.api.security.repository;
 
-import com.api.smpl_security.model.User;
+import com.api.security.model.User;
 import org.springframework.data.repository.ListCrudRepository;
 
 import java.util.List;

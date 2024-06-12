@@ -1,7 +1,7 @@
-package com.api.smpl_security.dto;
+package com.api.security.dto;
 
-import com.api.smpl_security.hashing.SaltedHashing;
-import com.api.smpl_security.model.User;
+import com.api.security.hashing.SaltedHashing;
+import com.api.security.model.User;
 
 import java.security.NoSuchAlgorithmException;
 

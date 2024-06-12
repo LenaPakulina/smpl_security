@@ -1,4 +1,4 @@
-package com.api.smpl_security.hashing;
+package com.api.security.hashing;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
